@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['localhost', '192.168.25.6']
 # Application definition
 
 INSTALLED_APPS = [
+    'django_adminlte',
     'website.apps.WebsiteConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -121,8 +122,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #STATIC_ROOT=os.path.join(BASE_DIR, 'static/')
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'website/static'),
+    os.path.join(BASE_DIR, 'static')
 ]
 
 MEDIA_URL='/media/'
